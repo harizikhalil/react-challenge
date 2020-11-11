@@ -1,0 +1,56 @@
+#home {
+  height: 754px;
+  background: url(../../image/home.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#home .home-container {
+  padding-top: 200px;
+  height: 100%;
+  text-align: center;
+}
+#home .content h1 {
+  font-size: 60px;
+  margin-bottom: 40px;
+  color: #fff;
+}
+#home .content h1::after {
+  content: "Welcome to my Portfolio";
+  animation: textanim 5s linear infinite;
+}
+@keyframes textanim {
+  30% {
+    content: "Im khalil harizi";
+  }
+  60% {
+    content: "A fullstack js developper";
+  }
+}
+.icon a {
+  color: #fff;
+  font-size: 22px;
+  margin: 0 15px;
+}
+
+.icon a:hover {
+  color: #48dbfb;
+}
+#home .buttons {
+  margin-top: 60px;
+}
+#home .buttons a {
+  display: inline-block;
+  margin: 15px 30px;
+  color: #48dbfb;
+  font-size: 15px;
+  font-weight: 500;
+  width: 180px;
+  border: 1px solid #48dbfb;
+  padding: 14px 0;
+  border-radius: 6px;
+  transition: 0.2s linear;
+}
+#home .buttons a:hover {
+  background-color: #48dbfb;
+  color: #fff;
+}

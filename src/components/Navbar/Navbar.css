@@ -1,0 +1,32 @@
+.navbar{
+    position: fixed;
+    background-color: #DCDCDC;
+    width: 100%;
+    padding: 20px;  
+  }
+  .navbar-container{
+    max-width: 1000px;
+    margin: auto;
+    
+  }
+
+  .logo{
+    width: 50px;
+    height: 35px;
+    background-size: cover;
+  }
+  .navbar-menu a{
+    color: #000;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 30px;
+    
+  }
+  .navbar .navbar-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar-menu a:hover{
+    color: #48dbfb ;
+  }

@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
-
+import Navbar from './components/Navbar/Navbar'
+import Home from './components/Home/Home'
+import About from './components/About/About'
+import Projects from './components/Projects/Projects'
+import Contact from './components/Contact/Contact'
+import Footer from './components/Footer/Footer'
+import {listmenu,listCards} from './components/Lists'
+import ProfilImage from './image/profil.jpg'
+import Logo from './image/logo.png'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <Navbar logo={Logo} listItems={listmenu}/>
+      <Home/>
+      <About title="About" profilPhoto={ProfilImage}/>
+      <Projects title="Projects" listCards={listCards} />
+      <Contact title="Contact"/>
+      <Footer/>
+      </React.Fragment>
+  
   );
 }
 

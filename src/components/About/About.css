@@ -1,0 +1,19 @@
+
+  .about-pic{
+    width: 200px;
+    border-radius: 50%;
+    margin-right: 100px;
+  }
+  .about-content{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  
+  .about-text p{
+    font-size: 17px;
+    text-align: justify;
+    line-height: 26px;
+    margin-top: 20px;
+  }
